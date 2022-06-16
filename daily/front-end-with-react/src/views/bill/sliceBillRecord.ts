@@ -14,7 +14,7 @@ export const billRecordService = serviceDaily(path);
 
 const initialState = {
     ...sliceDeleteState(),
-    ...sliceQueryState(path, 999),
+    ...sliceQueryState(path, 20),
     ...sliceSearchState(path, [searchCategory(), searchDate()]),
     form: {
         id: '' as string,
