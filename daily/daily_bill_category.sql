@@ -11,7 +11,7 @@
  Target Server Version : 100605
  File Encoding         : 65001
 
- Date: 16/06/2022 23:21:46
+ Date: 17/06/2022 21:54:03
 */
 
 SET NAMES utf8mb4;
@@ -28,7 +28,7 @@ CREATE TABLE `daily_bill_category`  (
   `daily_bill_category_nameId` int(11) NOT NULL,
   PRIMARY KEY (`daily_bill_category_id`) USING BTREE,
   UNIQUE INDEX `daily_bill_category_nameId`(`daily_bill_category_nameId`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 26 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 32 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of daily_bill_category
@@ -58,6 +58,12 @@ INSERT INTO `daily_bill_category` VALUES (22, 1654352074, 20, 99);
 INSERT INTO `daily_bill_category` VALUES (23, 1655390143, 20, 76);
 INSERT INTO `daily_bill_category` VALUES (24, 1655390251, 1, 40);
 INSERT INTO `daily_bill_category` VALUES (25, 1655390387, 4, 106);
+INSERT INTO `daily_bill_category` VALUES (26, 1655472798, 0, 108);
+INSERT INTO `daily_bill_category` VALUES (27, 1655472810, 26, 109);
+INSERT INTO `daily_bill_category` VALUES (28, 1655472927, 4, 110);
+INSERT INTO `daily_bill_category` VALUES (29, 1655473110, 16, 111);
+INSERT INTO `daily_bill_category` VALUES (30, 1655473216, 16, 112);
+INSERT INTO `daily_bill_category` VALUES (31, 1655473283, 26, 113);
 
 -- ----------------------------
 -- Table structure for daily_bill_record
@@ -70,7 +76,7 @@ CREATE TABLE `daily_bill_record`  (
   `daily_bill_record_amount` int(11) NOT NULL,
   `daily_bill_record_date` bigint(20) NOT NULL,
   PRIMARY KEY (`daily_bill_record_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 198 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 207 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of daily_bill_record
@@ -272,6 +278,15 @@ INSERT INTO `daily_bill_record` VALUES (194, 1655390787, 3, -1000, 1655222400);
 INSERT INTO `daily_bill_record` VALUES (195, 1655390808, 16, -10400, 1655222400);
 INSERT INTO `daily_bill_record` VALUES (196, 1655390835, 6, -50000, 1655222400);
 INSERT INTO `daily_bill_record` VALUES (197, 1655390853, 7, -600, 1655308800);
+INSERT INTO `daily_bill_record` VALUES (198, 1655469027, 7, -600, 1655395200);
+INSERT INTO `daily_bill_record` VALUES (199, 1655472707, 17, -1455, 1655395200);
+INSERT INTO `daily_bill_record` VALUES (200, 1655472832, 27, -5900, 1655395200);
+INSERT INTO `daily_bill_record` VALUES (201, 1655472958, 28, -1791, 1655395200);
+INSERT INTO `daily_bill_record` VALUES (202, 1655473049, 14, -1330, 1655395200);
+INSERT INTO `daily_bill_record` VALUES (203, 1655473155, 29, -1000, 1655395200);
+INSERT INTO `daily_bill_record` VALUES (204, 1655473173, 18, -1200, 1655395200);
+INSERT INTO `daily_bill_record` VALUES (205, 1655473221, 30, -1880, 1655395200);
+INSERT INTO `daily_bill_record` VALUES (206, 1655473297, 31, -1890, 1655395200);
 
 -- ----------------------------
 -- Table structure for daily_name
@@ -283,7 +298,7 @@ CREATE TABLE `daily_name`  (
   `daily_name_name` varchar(32) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
   PRIMARY KEY (`daily_name_id`) USING BTREE,
   UNIQUE INDEX `daily_name_name`(`daily_name_name`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 107 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 114 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of daily_name
@@ -394,6 +409,13 @@ INSERT INTO `daily_name` VALUES (103, 1655387433, 'CAD');
 INSERT INTO `daily_name` VALUES (104, 1655387709, '抬板材');
 INSERT INTO `daily_name` VALUES (105, 1655390373, '水');
 INSERT INTO `daily_name` VALUES (106, 1655390699, '自行车维修');
+INSERT INTO `daily_name` VALUES (107, 1655468889, '引体向上');
+INSERT INTO `daily_name` VALUES (108, 1655472762, '衣');
+INSERT INTO `daily_name` VALUES (109, 1655472778, '内裤');
+INSERT INTO `daily_name` VALUES (110, 1655472914, '口罩');
+INSERT INTO `daily_name` VALUES (111, 1655473096, '牙刷');
+INSERT INTO `daily_name` VALUES (112, 1655473213, '毛巾');
+INSERT INTO `daily_name` VALUES (113, 1655473267, '拖鞋');
 
 -- ----------------------------
 -- Table structure for daily_sport_category
@@ -405,7 +427,7 @@ CREATE TABLE `daily_sport_category`  (
   `daily_sport_category_nameId` int(11) NOT NULL,
   PRIMARY KEY (`daily_sport_category_id`) USING BTREE,
   UNIQUE INDEX `daily_sport_category_nameId`(`daily_sport_category_nameId`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 8 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 9 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of daily_sport_category
@@ -417,6 +439,7 @@ INSERT INTO `daily_sport_category` VALUES (4, 1649819162, 10);
 INSERT INTO `daily_sport_category` VALUES (5, 1649819168, 11);
 INSERT INTO `daily_sport_category` VALUES (6, 1649819174, 12);
 INSERT INTO `daily_sport_category` VALUES (7, 1652960024, 97);
+INSERT INTO `daily_sport_category` VALUES (8, 1655468898, 107);
 
 -- ----------------------------
 -- Table structure for daily_sport_record
@@ -430,7 +453,7 @@ CREATE TABLE `daily_sport_record`  (
   `daily_sport_record_amount` int(11) NOT NULL,
   `daily_sport_record_date` bigint(20) NOT NULL,
   PRIMARY KEY (`daily_sport_record_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 137 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 141 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of daily_sport_record
@@ -571,6 +594,10 @@ INSERT INTO `daily_sport_record` VALUES (133, 1655389503, 1, 1, 12, 1655049600);
 INSERT INTO `daily_sport_record` VALUES (134, 1655389513, 1, 1, 12, 1655049600);
 INSERT INTO `daily_sport_record` VALUES (135, 1655389527, 1, 1, 15, 1655308800);
 INSERT INTO `daily_sport_record` VALUES (136, 1655389533, 1, 1, 12, 1655308800);
+INSERT INTO `daily_sport_record` VALUES (137, 1655468934, 1, 1, 16, 1655395200);
+INSERT INTO `daily_sport_record` VALUES (138, 1655468947, 1, 1, 13, 1655395200);
+INSERT INTO `daily_sport_record` VALUES (139, 1655468955, 1, 1, 12, 1655395200);
+INSERT INTO `daily_sport_record` VALUES (140, 1655468965, 8, 1, 3, 1655395200);
 
 -- ----------------------------
 -- Table structure for daily_time_category
@@ -681,7 +708,7 @@ CREATE TABLE `daily_time_record`  (
   `daily_time_record_beginTime` bigint(20) NOT NULL,
   `daily_time_record_endTime` bigint(20) NOT NULL,
   PRIMARY KEY (`daily_time_record_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 6047 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 6060 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of daily_time_record
@@ -6732,6 +6759,19 @@ INSERT INTO `daily_time_record` VALUES (6043, 1655388920, 24, 1655376000, 165537
 INSERT INTO `daily_time_record` VALUES (6044, 1655388939, 75, 1655378700, 1655382600);
 INSERT INTO `daily_time_record` VALUES (6045, 1655388950, 32, 1655382600, 1655384400);
 INSERT INTO `daily_time_record` VALUES (6046, 1655388962, 24, 1655384400, 1655387100);
+INSERT INTO `daily_time_record` VALUES (6047, 1655473715, 24, 1655387100, 1655389800);
+INSERT INTO `daily_time_record` VALUES (6048, 1655473732, 33, 1655389800, 1655393400);
+INSERT INTO `daily_time_record` VALUES (6049, 1655473741, 2, 1655393400, 1655395200);
+INSERT INTO `daily_time_record` VALUES (6050, 1655473751, 2, 1655395200, 1655420400);
+INSERT INTO `daily_time_record` VALUES (6051, 1655473760, 27, 1655420400, 1655424000);
+INSERT INTO `daily_time_record` VALUES (6052, 1655473812, 43, 1655424000, 1655438400);
+INSERT INTO `daily_time_record` VALUES (6053, 1655473823, 28, 1655438400, 1655442000);
+INSERT INTO `daily_time_record` VALUES (6054, 1655473835, 33, 1655442000, 1655443800);
+INSERT INTO `daily_time_record` VALUES (6055, 1655473849, 3, 1655443800, 1655445600);
+INSERT INTO `daily_time_record` VALUES (6056, 1655473861, 43, 1655445600, 1655460000);
+INSERT INTO `daily_time_record` VALUES (6057, 1655473871, 29, 1655460000, 1655463600);
+INSERT INTO `daily_time_record` VALUES (6058, 1655473886, 32, 1655463600, 1655467200);
+INSERT INTO `daily_time_record` VALUES (6059, 1655473971, 65, 1655467200, 1655472600);
 
 -- ----------------------------
 -- Table structure for daily_unit
