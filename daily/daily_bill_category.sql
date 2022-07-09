@@ -11,7 +11,7 @@
  Target Server Version : 100605
  File Encoding         : 65001
 
- Date: 06/07/2022 22:28:17
+ Date: 09/07/2022 21:03:02
 */
 
 SET NAMES utf8mb4;
@@ -81,7 +81,7 @@ CREATE TABLE `daily_bill_record`  (
   `daily_bill_record_amount` int(11) NOT NULL,
   `daily_bill_record_date` bigint(20) NOT NULL,
   PRIMARY KEY (`daily_bill_record_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 232 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 235 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of daily_bill_record
@@ -317,6 +317,9 @@ INSERT INTO `daily_bill_record` VALUES (228, 1657116116, 36, -10450, 1656950400)
 INSERT INTO `daily_bill_record` VALUES (229, 1657116125, 35, -9700, 1656950400);
 INSERT INTO `daily_bill_record` VALUES (230, 1657116138, 7, -600, 1657036800);
 INSERT INTO `daily_bill_record` VALUES (231, 1657116155, 36, -3600, 1657036800);
+INSERT INTO `daily_bill_record` VALUES (232, 1657199535, 7, -600, 1657123200);
+INSERT INTO `daily_bill_record` VALUES (233, 1657371480, 7, -600, 1657209600);
+INSERT INTO `daily_bill_record` VALUES (234, 1657371490, 7, -600, 1657296000);
 
 -- ----------------------------
 -- Table structure for daily_name
@@ -490,7 +493,7 @@ CREATE TABLE `daily_sport_record`  (
   `daily_sport_record_amount` int(11) NOT NULL,
   `daily_sport_record_date` bigint(20) NOT NULL,
   PRIMARY KEY (`daily_sport_record_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 208 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 232 CHARACTER SET = utf8mb3 COLLATE = utf8mb3_general_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Records of daily_sport_record
@@ -702,6 +705,30 @@ INSERT INTO `daily_sport_record` VALUES (204, 1657116445, 4, 2, 10, 1656950400);
 INSERT INTO `daily_sport_record` VALUES (205, 1657116475, 7, 2, 35, 1657036800);
 INSERT INTO `daily_sport_record` VALUES (206, 1657116487, 7, 2, 50, 1657036800);
 INSERT INTO `daily_sport_record` VALUES (207, 1657116502, 7, 2, 30, 1657036800);
+INSERT INTO `daily_sport_record` VALUES (208, 1657199557, 8, 1, 6, 1657123200);
+INSERT INTO `daily_sport_record` VALUES (209, 1657199565, 8, 1, 5, 1657123200);
+INSERT INTO `daily_sport_record` VALUES (210, 1657199574, 8, 1, 5, 1657123200);
+INSERT INTO `daily_sport_record` VALUES (211, 1657199586, 4, 2, 12, 1657123200);
+INSERT INTO `daily_sport_record` VALUES (212, 1657199592, 4, 2, 12, 1657123200);
+INSERT INTO `daily_sport_record` VALUES (213, 1657199601, 1, 1, 12, 1657123200);
+INSERT INTO `daily_sport_record` VALUES (214, 1657199617, 9, 1, 20, 1657123200);
+INSERT INTO `daily_sport_record` VALUES (215, 1657199625, 9, 1, 15, 1657123200);
+INSERT INTO `daily_sport_record` VALUES (216, 1657199633, 9, 1, 18, 1657123200);
+INSERT INTO `daily_sport_record` VALUES (217, 1657199653, 7, 2, 60, 1657123200);
+INSERT INTO `daily_sport_record` VALUES (218, 1657199663, 7, 2, 45, 1657123200);
+INSERT INTO `daily_sport_record` VALUES (219, 1657199684, 7, 2, 35, 1657123200);
+INSERT INTO `daily_sport_record` VALUES (220, 1657199866, 3, 1, 6, 1657123200);
+INSERT INTO `daily_sport_record` VALUES (221, 1657371529, 3, 1, 8, 1657296000);
+INSERT INTO `daily_sport_record` VALUES (222, 1657371542, 4, 2, 12, 1657296000);
+INSERT INTO `daily_sport_record` VALUES (223, 1657371550, 4, 2, 15, 1657296000);
+INSERT INTO `daily_sport_record` VALUES (224, 1657371559, 9, 1, 12, 1657296000);
+INSERT INTO `daily_sport_record` VALUES (225, 1657371571, 9, 1, 15, 1657296000);
+INSERT INTO `daily_sport_record` VALUES (226, 1657371581, 8, 1, 5, 1657296000);
+INSERT INTO `daily_sport_record` VALUES (227, 1657371588, 8, 1, 5, 1657296000);
+INSERT INTO `daily_sport_record` VALUES (228, 1657371611, 1, 1, 8, 1657296000);
+INSERT INTO `daily_sport_record` VALUES (229, 1657371631, 7, 2, 65, 1657296000);
+INSERT INTO `daily_sport_record` VALUES (230, 1657371643, 7, 2, 60, 1657296000);
+INSERT INTO `daily_sport_record` VALUES (231, 1657371656, 7, 2, 50, 1657296000);
 
 -- ----------------------------
 -- Table structure for daily_time_category
