@@ -12,7 +12,8 @@ class Api
 
     static public function load()
     {
-        include '../back-end-with-php/bootstrap.php';
+        include '../back-end-with-php/Autoload.php';
+        include '../back-end-with-php/Bootstrap.php';
     }
 }
 
