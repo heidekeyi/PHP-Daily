@@ -5,8 +5,10 @@ namespace daily\reduction\Bootstrap;
 include '../Autoload.php';
 
 use daily\reduction\BaseReduction\BaseReduction;
+use daily\reduction\BillReduction\BillReduction;
 use daily\reduction\NameReduction\NameReduction;
 use daily\reduction\SportReduction\SportReduction;
+use daily\reduction\TimeReduction\TimeReduction;
 use daily\reduction\UnitReduction\UnitReduction;
 
 class Bootstrap
@@ -17,6 +19,8 @@ class Bootstrap
             NameReduction::class,
             UnitReduction::class,
             SportReduction::class,
+            BillReduction::class,
+            TimeReduction::class
         ];
         $ob = new static();
         foreach ($reductions as $it) {
