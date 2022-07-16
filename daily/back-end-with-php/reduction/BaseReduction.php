@@ -10,7 +10,7 @@ abstract class BaseReduction
 {
     abstract public function calibration();
 
-    static protected array $values = [0];
+    static protected array $values = [1657973467];
 
     protected function db(): DbUtil
     {
