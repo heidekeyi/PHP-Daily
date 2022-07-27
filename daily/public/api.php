@@ -1,6 +1,6 @@
 <?php
 
-namespace daily\public\api;
+namespace daily\api;
 
 class Api
 {

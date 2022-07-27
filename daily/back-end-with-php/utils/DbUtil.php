@@ -22,6 +22,7 @@ class DbUtil
             );
             $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         } catch (Exception $_) {
+        	echo $_;die;
             $this->responseError('db connect error');
         }
     }
